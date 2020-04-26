@@ -54,12 +54,8 @@ body {
 .box-container {
     margin: 100px auto;
     padding: 0 30px;
-    /*padding prawy i lewy po 30 żeby nie było przyklejenia do krawedzi ekranu*/
-    /*poniższy zabieg jest po to, że jak ktos ma bardzo szeroko ekran, to żeby nie miał całej strony od lewej do prawej, bo to by strasznie niszczyło układ, tylko dajemy max szerokość i koniecznie margines prawy i lewy auto, żeby nam wyśrodkowało*/
     max-width: 1440px;
     width: 100%;
-    /* height: 500px; - wysokość jest niepotrzebna, jak zwęża pani ekran, to tekst wychodzi poza kontener, wysokością operujemy tylko wtedy kiedy naprawde jets taka konieczność */
-
 }
 
 .box-flex {
@@ -114,15 +110,6 @@ body {
     }
 
 }
-
-/* 
-@media only screen and (max-width: 770px) {
-    .nav-bar {
-
-    }
-    
-
-} */
 
 .white {
     color: white;

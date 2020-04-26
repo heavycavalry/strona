@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+    type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="main.js"></script>
+    <title>Alamakota</title>
+</head>
+
+<body>
+
+    <body class="form-body">
+        <header class="page-header">
+            <nav class="nav-bar">
+                <ul>
+                    <li class="top-container"><a href="index.html" class="active">Home</a><span
+                            class="main-menu-arrow"></span></li>
+                    <li class="top-container"><a href="#">About Us</a><span class="main-menu-arrow"></span></li>
+                    <li class="top-container"><a href="#">Clothes</a><span class="main-menu-arrow"></span></li>
+                    <li class="top-container"><a href="jewelry.html">Jewelry</a><span class="main-menu-arrow"></span>
+                    </li>
+                    <li class="top-container"><a href="form.html">Contact</a><span class="main-menu-arrow"></span></li>
+                </ul>
+            </nav>
+            <h1 class="company-name">Alamakota</h1>
+            <p class="nicer-text quote">You were born an original work of art.<br /> Stay <b>original</b>.</p>
+        </header>
+
+
+        <section class="box-container box-flex center-wrap contact-background">
+            <div class="about-container form-box">
+                <form method="GET" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                   
+                    <label class="top">
+                        <p class=typename>FirstName</p>
+                        <input type="text" name="name" required>
+                        <span class="validity"></span>
+                    </label>
+
+                    <label class="top">
+                        <p class=typename>Last Name</p>
+                        <input type="text" name="name" required>
+                        <span class="validity"></span>
+                    </label>
+
+                    <label class="top box-flex">
+                        <p class=typename>Email</p>
+                        <input type="email" name="email" placeholder="example@gmail.com" required>
+                        <span class="validity"></span>
+                    </label>
+
+                    <label class="top">
+                        <p class=typename>Phone</p>
+                        <input type="tel" placeholder="123-4567-8901">
+                    </label>
+
+                    <label class="top">
+                        <p class=typename>What can We help you with?</p>
+                        <textarea></textarea>
+                    </label>
+
+                    <input type="submit" class="submitBtn" value="Send Message">
+
+                </form>
+            </div>
+
+            <div class="about-container form-box">
+                <img class="form-foto" src="src/formfoto.jpg">
+            </div>
+       
+        </section>
+    </div>
+    <footer class="about box-flex">
+        <div class="box-container">
+            <div class="icons about-container">
+                <a href="#"><i class="fab fa fa-instagram"></i></a>
+                <a href="#"><i class="fab fa fa-facebook-square"></i></i></a>
+                <a href="#"><i class="fab fa fa-twitter"></i></a>
+                <a href="#"><i class="fab fa fa-pinterest-square"></i></a>
+            </div>
+
+            <div class="company-name">
+                <h3 class="shops-text">Our Shop's</h3>
+            </div>
+
+
+            <table class="stores-table">
+                <tr>
+                    <th rowspan="2">London</th>
+                    <td>23 Beak Street London<br />
+                        W1F 9RS<br />
+                        Tel - 020 3157 7000</td>
+                </tr>
+                <tr>
+                    <td>286 Upper Street London<br />
+                        N1 2TZ<br />
+                        Tel - 0207 354 1424</td>
+                </tr>
+
+
+                <tr>
+                    <th rowspan="2">Cambridge</th>
+                    <td>3 Peas Hill<br />
+                        CB2 3AD<br />
+                        Tel - 010 2153 1324</td>
+                </tr>
+                <tr>
+                    <td>18 Rose Cres<br />
+                        CB2 3LL<br />
+                        Tel - 010 5344 1414</td>
+                </tr>
+            </table>
+            </div>
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+        type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="main.js"></script>
+    <title>Alamakota</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <nav class="nav-bar">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li class="top-container"><a href="index.html">Home</a></li>
+                <li class="top-container"><a href="#">About Us</a></li>
+                <li class="top-container"><a href="#">Clothes</a></li>
+                <li class="top-container"><a href="jewelry.html">Jewelry</a></li>
+                <li class="top-container"><a href="form.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <div id="bar">
+            <form id="search" method="get" action="">
+                <input type="text" class="text" value="" />
+                <input type="submit" class="submit" value="Search" />
+            </form>
+        </div>
+
+        <h1 class="company-name">Alamakota</h1>
+        <img src="src/foto1.jpg" class="main-picture">
+    </header>
+
+
+    <section class="box-container box-flex center-wrap">
+        <div class="box-1 box-33">
+
+            <p class="company-name white"><b>Alamakota</b></p>
+            <p class="in-box">from 1999</p>
+            <p class="in-box">Our newest designs<br /> build on a legacy of over 180 years of craftsmanship with
+                beautifully modern necklaces<br /> and pendants, bracelets, rings and more</p>
+
+        </div>
+        <img class="box-33 box-photo" src="src/foto2.jpg">
+        <img class="box-33 box-photo" src="src/foto3.jpg">
+    </section>
+
+    <h2 class="slogan-main-text">For Women all over the world.</h2>
+
+    <section class="box-container box-flex center-wrap">
+        <article class="slogan-text">
+            <h3 class="nicer-text">BEAUTY.</br> Made once only.</h3>
+            <p>
+                Each of us is unique; what we wear should be unique,
+                too. This is why Fluttuo makes only one copy of each jewel, so that it will belong to only one person.
+                We
+                combine new materials in surprising ways through a careful artisanal process, in the pursuit of
+                uniqueness.
+                Because this is you, and noone else.
+            </p>
+        </article>
+        <article class="slogan-text">
+            <h3 class="nicer-text">LIFE IS A STAGE,</br> break the guitar.</h3>
+            <!-- raczej nie zostawiamy tekstu ta po prostu samego, lepiej go dac w znacznik p -->
+            <p>
+                Do you really care what others expect
+                from you? Neither do Traugott jewels. These little rebels were designed around precious wood cutouts
+                from
+                the workshop of Jeff Traugott, master Californian guitar maker. They are icons of energy and rhythm.
+                They
+                are made for rockstars.
+            </p>
+        </article>
+        <article class="slogan-text">
+            <h3 class="nicer-text">THE WORLD,</br>
+
+                is your playground.</h3>
+            <p>Why stay within borders, when you can fly?
+                You were made to be free and the Freely jewels were made for you. They will be the feathers to your
+                wings.
+                Colorful and happy, they will follow everywhere you’ll decide to go.
+            </p>
+        </article>
+    </section>
+
+    <footer class="about box-flex">
+
+        <!-- najlepiej mieć jedną klasę, na kontener, która wyznacz główną szerokość - dzięki temu we wszystkich sekcjach mamy taką samą szerokośc głownego kontenera oraz jego boczne paddingi. elemnt moze miec kilka klas -->
+        <div class="box-container">
+            <div class="about-container">
+                <p class="about-text">Alamakota was born with the desire to offer a fresh alternative to traditional
+                    jewellery and clothes, which could suit the uniqueness of contemporary women. Alamakota constantly
+                    experiments with new materials and innovative designs from diffrent regions. All jewels are made
+                    once
+                    only.<br /> They are nickel free, hand-produced in London and carefully packaged for your enjoyment.
+                </p>
+            </div>
+            <div class="icons about-container">
+                <a href="#"><i class="fab fa fa-instagram"></i></a>
+                <a href="#"><i class="fab fa fa-facebook-square"></i></i></a>
+                <a href="#"><i class="fab fa fa-twitter"></i></a>
+                <a href="#"><i class="fab fa fa-pinterest-square"></i></a>
+            </div>
+
+            <div class="company-name">
+                <h3 class="shops-text">Our Shop's</h3>
+            </div>
+
+
+            <table class="stores-table">
+                <tr>
+                    <th rowspan="2">London</th>
+                    <td>23 Beak Street London<br />
+                        W1F 9RS<br />
+                        Tel - 020 3157 7000</td>
+                </tr>
+                <tr>
+                    <td>286 Upper Street London<br />
+                        N1 2TZ<br />
+                        Tel - 0207 354 1424</td>
+                </tr>
+
+
+                <tr>
+                    <th rowspan="2">Cambridge</th>
+                    <td>3 Peas Hill<br />
+                        CB2 3AD<br />
+                        Tel - 010 2153 1324</td>
+                </tr>
+                <tr>
+                    <td>18 Rose Cres<br />
+                        CB2 3LL<br />
+                        Tel - 010 5344 1414</td>
+                </tr>
+            </table>
+        </div>
+        </footer>
+    
+</body>
+
+</html>

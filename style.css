@@ -103,6 +103,7 @@ body {
         margin: 40px;
     }
 }
+
 @media only screen and (max-width: 800px) {
     .box-1 {
         width: 100%;
@@ -256,7 +257,8 @@ td {
 }
 
 ::selection {
-    background: rgba(138, 167, 146, 0.473);;
+    background: rgba(138, 167, 146, 0.473);
+    ;
 }
 
 .nav-bar li:first-child {
@@ -269,7 +271,7 @@ td {
     padding-bottom: 2rem;
     font-size: 1.3rem;
     color: rgb(66, 66, 66);
-   
+
 }
 
 input {
@@ -309,7 +311,8 @@ textarea {
 
 .submitBtn {
     border-color: rgb(255, 255, 255);
-    background-color: rgb(180, 132, 132);;
+    background-color: rgb(180, 132, 132);
+    ;
     font-size: 1.5rem;
     padding: .4rem 1rem;
     border-radius: 1rem;

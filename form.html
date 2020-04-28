@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
-    type='text/css'>
+        type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <script src="main.js"></script>
     <title>Alamakota</title>
@@ -40,33 +40,41 @@
 
         <section class="about-container center-wrap box-flex contact-background">
             <div class="form-box">
-                <form method="GET" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
-                   
+                <form name="myForm">
+
+                    <p class=typename>First Name</p>
                     <label class="top">
-                        <p class=typename>FirstName</p>
                         <input type="text" name="name" required>
                         <span class="validity"></span>
                     </label>
 
+                    <p class=typename>Last Name</p>
                     <label class="top">
-                        <p class=typename>Last Name</p>
                         <input type="text" name="name" required>
                         <span class="validity"></span>
                     </label>
-
+                    <p class=typename>Email</p>
                     <label class="top box-flex">
-                        <p class=typename>Email</p>
                         <input type="email" name="email" placeholder="example@gmail.com" required>
                         <span class="validity"></span>
                     </label>
-
+                    <p class=typename>Phone</p>
                     <label class="top">
-                        <p class=typename>Phone</p>
-                        <input type="tel" placeholder="123-4567-8901">
+                        <input type="tel" name="Phone" placeholder="123-4567-8901">
+                    </label>
+                    <p class=typename>Reason for contact</p>
+                    <label class="top">
+                        <input list="datalist">
+                        <datalist id="datalist">
+                            <option value="Order">
+                            <option value="Reclamation">
+                            <option value="Advertising/Promotion">
+                            <option value="Other">
+                        </datalist>
                     </label>
 
+                    <p class=typename>What can We help you with?</p>
                     <label class="top">
-                        <p class=typename>What can We help you with?</p>
                         <textarea></textarea>
                     </label>
 
@@ -76,50 +84,51 @@
             </div>
 
             <div class="form-box">
-                <img class="form-foto" src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                <img class="form-foto"
+                    src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
             </div>
         </section>
-    </div>
-    <footer class="about box-flex">
-        <div class="box-container">
-            <div class="icons about-container">
-                <a href="#"><i class="fab fa fa-instagram"></i></a>
-                <a href="#"><i class="fab fa fa-facebook-square"></i></i></a>
-                <a href="#"><i class="fab fa fa-twitter"></i></a>
-                <a href="#"><i class="fab fa fa-pinterest-square"></i></a>
-            </div>
+        </div>
+        <footer class="about box-flex">
+            <div class="box-container">
+                <div class="icons about-container">
+                    <a href="#"><i class="fab fa fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa fa-facebook-square"></i></i></a>
+                    <a href="#"><i class="fab fa fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa fa-pinterest-square"></i></a>
+                </div>
 
-            <div class="company-name">
-                <h3 class="shops-text">Our Shop's</h3>
-            </div>
-
-
-            <table class="stores-table">
-                <tr>
-                    <th rowspan="2">London</th>
-                    <td>23 Beak Street London<br />
-                        W1F 9RS<br />
-                        Tel - 020 3157 7000</td>
-                </tr>
-                <tr>
-                    <td>286 Upper Street London<br />
-                        N1 2TZ<br />
-                        Tel - 0207 354 1424</td>
-                </tr>
+                <div class="company-name">
+                    <h3 class="shops-text">Our Shop's</h3>
+                </div>
 
 
-                <tr>
-                    <th rowspan="2">Cambridge</th>
-                    <td>3 Peas Hill<br />
-                        CB2 3AD<br />
-                        Tel - 010 2153 1324</td>
-                </tr>
-                <tr>
-                    <td>18 Rose Cres<br />
-                        CB2 3LL<br />
-                        Tel - 010 5344 1414</td>
-                </tr>
-            </table>
+                <table class="stores-table">
+                    <tr>
+                        <th rowspan="2">London</th>
+                        <td>23 Beak Street London<br />
+                            W1F 9RS<br />
+                            Tel - 020 3157 7000</td>
+                    </tr>
+                    <tr>
+                        <td>286 Upper Street London<br />
+                            N1 2TZ<br />
+                            Tel - 0207 354 1424</td>
+                    </tr>
+
+
+                    <tr>
+                        <th rowspan="2">Cambridge</th>
+                        <td>3 Peas Hill<br />
+                            CB2 3AD<br />
+                            Tel - 010 2153 1324</td>
+                    </tr>
+                    <tr>
+                        <td>18 Rose Cres<br />
+                            CB2 3LL<br />
+                            Tel - 010 5344 1414</td>
+                    </tr>
+                </table>
             </div>
         </footer>
 

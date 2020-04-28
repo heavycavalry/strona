@@ -280,6 +280,14 @@ textarea {
     padding: 50px;
 }
 
+.form-foto {
+    margin-top: 30px;
+    padding: 50px;
+    width: 600px;
+    border: 20px solid rgba(255, 255, 255, 0.705);
+
+}
+
 
 .submitBtn {
     border-color: rgb(255, 255, 255);

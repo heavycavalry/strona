@@ -274,13 +274,12 @@ textarea {
     min-height: 20rem;
 }
 
-.contact-background {
+.contact-box {
     background-color: rgba(179, 178, 178, 0.705);
+    justify-content: space-evenly;
+    padding: 50px;
 }
 
-.form-box {
-    padding: 5rem 5rem;
-}
 
 .submitBtn {
     border-color: rgb(255, 255, 255);

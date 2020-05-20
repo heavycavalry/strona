@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
@@ -9,11 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <script src="main.js"></script>
+
     <title>Alamakota</title>
 </head>
 
 <body>
+    
     <header class="page-header">
         <nav class="nav-bar">
             <ul>
@@ -87,6 +89,22 @@
             </p>
         </article>
     </section>
+    <div class="about-container">
+    <button class="subscribeBtn"><b>Subscribe</b> to get our newest designs!</button>
+    </div>
+
+
+    <div class="modal-background box-flex">
+        <div class="modal box-flex">
+            <h3 class="modal-main-text">subscribe our newsletter</h3>
+            <label for="name">Name:</label>
+            <input type="text">
+            <label for="email">Email:</label>
+            <input type="email" name="email">
+            <button class = "modalBtn">Subscribe</button>
+            <span class="modal-close">X</span>
+        </div>
+    </div>
 
     <footer class="about box-flex">
         <div class="box-container">
@@ -138,7 +156,7 @@
             </table>
         </div>
     </footer>
-
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -11,7 +11,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
         type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <script src="main.js"></script>
     <title>Alamakota</title>
 </head>
 
@@ -38,56 +37,52 @@
         </header>
 
 
-        <section class="box-container center-wrap box-flex contact-box">
-            <div class="form-box">
-                <form name="myForm">
-
-                    <p class=typename>First Name</p>
-                    <label class="top">
-                        <input type="text" name="name" required>
-                        <span class="validity"></span>
-                    </label>
-
-                    <p class=typename>Last Name</p>
-                    <label class="top">
-                        <input type="text" name="name" required>
-                        <span class="validity"></span>
-                    </label>
-                    <p class=typename>Email</p>
-                    <label class="top box-flex">
-                        <input type="email" name="email" placeholder="example@gmail.com" required>
-                        <span class="validity"></span>
-                    </label>
-                    <p class=typename>Phone</p>
-                    <label class="top">
-                        <input type="tel" name="Phone" placeholder="123-4567-8901">
-                    </label>
-                    <p class=typename>Reason for contact</p>
-                    <label class="top">
-                        <input list="datalist">
-                        <datalist id="datalist">
-                            <option value="Order">
+        <section class="box-container contact-box">
+            <div class="about-container box-flex center-wrap form-box">
+            <div>
+                <form name="myForm" method="GET">
+                    <div class="form">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text">
+                    </div>
+                    <div class="form">
+                        <label for="lname">Last Name</label>
+                        <input id="lname" name="lname" type="text">
+                    </div>
+                    <div class="form">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email">
+                    </div>
+                    <div class="form">
+                        <label for="Phone">Phone</label>
+                        <input id="phone" name="phone" type="tel">
+                    </div>
+                    <div class="form">
+                        <label for="theme">Reason for contact</label>
+                        <input list="theme">
+                        <datalist id="theme">
+                            <option value="Orders">
                             <option value="Reclamation">
                             <option value="Advertising/Promotion">
                             <option value="Other">
                         </datalist>
-                    </label>
-
-                    <p class=typename>What can We help you with?</p>
-                    <label class="top">
+                    </div>
+                    <div>
+                        <label for="textarea">What can We help you with?</label>
                         <textarea></textarea>
-                    </label>
-
-                    <input type="submit" class="submitBtn" value="Send Message">
-
+                    </div>
+                    <div class="button">
+                        <button class = "submitBtn"type="submit">SEND</button>
+                    </div>
                 </form>
             </div>
-
-            <div class="form-box">
-                <img class="form-foto" src="https://cdn.pixabay.com/photo/2016/03/09/09/33/hands-1245860_960_720.jpg">
+            <div class = "form-foto">
+                <img src="https://images.pexels.com/photos/1721937/pexels-photo-1721937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="">
             </div>
-        </section>
         </div>
+        </section>
+
         <footer class="about box-flex">
             <div class="box-container">
                 <div class="icons about-container">

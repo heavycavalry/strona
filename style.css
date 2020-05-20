@@ -33,8 +33,7 @@ body {
 }
 
 
-.nav-bar ul li a:hover {
-    transition: 0.8s all;
+.active, .nav-bar ul li a:hover {
     color: grey;
 }
 
@@ -244,35 +243,29 @@ td {
     font-weight: bold;
 }
 
+.form-box {
+    justify-content: space-around;
+} 
 
-.top {
+label {
     display: block;
-    margin-bottom: 2rem;
-    font-size: 1.3rem;
-    color: rgb(66, 66, 66);
-
+    padding-top: 22px;
+    padding-bottom: 2px;
+    font-size: 18px;
 }
 
-.top input:valid+.validity:after {
-    content: '✓';
-    padding: 10px;
-    color: #009000;
-}
-
-
-.top input,
-textarea {
-    margin-top: .2rem;
-    width: 25rem;
-    font-size: 1rem;
-    padding: .75rem;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(82, 81, 81);
+.form input {
+    height: 40px;
+    border: 5px solid rgba(49, 47, 47, 0.24) ;
+    width: 250px;
 }
 
 textarea {
-    min-height: 20rem;
+    width: 350px;
+    height: 300px;
+    border: 5px solid rgba(49, 47, 47, 0.24) ;
 }
+
 
 .contact-box {
     background-color: rgba(179, 178, 178, 0.705);
@@ -280,12 +273,11 @@ textarea {
     padding: 50px;
 }
 
-.form-foto {
-    margin-top: 30px;
-    padding: 50px;
-    width: 600px;
+.form-foto img {
+    margin-top: 40px;
+    width: 550px;
+    padding:50px;
     border: 20px solid rgba(255, 255, 255, 0.705);
-
 }
 
 
@@ -316,19 +308,85 @@ td:hover {
     color: rgb(143, 125, 21);
 }
 
-textarea {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-
-
 #bar {
     float: right;
     padding: 20px;
+    position: relative;
 }
+
 
 @media only screen and (max-width: 920px) {
     #bar {
         display: none;
     }
+}
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(68, 68, 68, 0.229);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.background-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background-color: rgba(255, 255, 255, 0.89);
+    border: 10px solid rgba(207, 156, 14, 0.397);
+    width: 50vw;
+    height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.modal-main-text {
+    text-transform: capitalize;
+    color: rgb(46, 107, 46);
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+}
+.modal button {
+    width: 130px;
+    height: 50px;
+    font-size: 25px;
+    margin-top: 50px;
+    background-color: rgb(255, 242, 122);
+    border-radius: 10px;
+    border: none;
+    color: rgb(26, 46, 26);
+}
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.subscribeBtn {
+    background-color: rgb(255, 212, 251);
+    width: 50vw;
+    height: 15vh;
+    font-size: 30px;
+    border: 15px solid rgba(238, 187, 238, 0.589);
+    transition: 1s all;
+    border-radius: 1ex;
+}
+
+.subscribeBtn:hover {
+    background-color: rgb(253, 255, 164);
+    border: 20px solid rgb(255, 239, 91);
+    transition: 1s all;
 }

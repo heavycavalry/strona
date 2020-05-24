@@ -404,3 +404,8 @@ button {
     border: 20px solid rgb(255, 239, 91);
     transition: 1s all;
 }
+
+input:required,
+textarea:required {
+    border: 1px solid rgba(255, 0, 0, 0.445);
+}

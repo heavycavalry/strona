@@ -11,12 +11,34 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
         type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="media.css" media="screen" />
     <title>Alamakota</title>
 </head>
 
 <body>
 
-    <body class="form-body">
+    <body>
+        <div class="mobilenav-background">
+            <div class="mobile-icon-container">
+                <i class="fa fa-search mobile-icon" aria-hidden="true"></i>
+            </div>
+            <div class="mobilenav-container">
+                <nav class="mobilenav">
+                    <div class="hamburger-menu">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </div>
+
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="jewelry.html" class="nav-link">Jewellery</a></li>
+                        <li class="nav-item"><a href="form.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <header class="page-header">
             <nav class="nav-bar">
                 <ul>
@@ -24,8 +46,15 @@
                     <li class="top-container"><a href="#">About Us</a></li>
                     <li class="top-container"><a href="jewelry.html">Jewellery</a></li>
                     <li class="top-container"><a href="form.html">Contact</a></li>
+                    <li class="top-container" id="bar">
+                        <form id="search">
+                            <input type="text" class="text" />
+                            <input type="submit" class="submit" value="Search" />
+                        </form>
+                    </li>
                 </ul>
             </nav>
+
             <div id="bar">
                 <form id="search">
                     <input type="text" class="text" value="" />
@@ -37,7 +66,7 @@
         </header>
 
 
-        <section class="box-container contact-box">
+        <section class="box-container contact-box page-end">
             <div class="about-container box-flex center-wrap form-box">
                 <div>
                     <form name="myForm" method="GET">
@@ -125,7 +154,7 @@
                 </table>
             </div>
         </footer>
-
+        <script src="main.js"></script>
     </body>
 
 </html>

@@ -9,19 +9,48 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
         type='text/css'>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="media.css" media="screen" />
     <title>Jewellery</title>
 </head>
 
 <body>
+    <div class="mobilenav-background">
+        <div class="mobile-icon-container">
+            <i class="fa fa-search mobile-icon" aria-hidden="true"></i>
+        </div>
+        <div class="mobilenav-container">
+            <nav class="mobilenav">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="jewelry.html" class="nav-link">Jewellery</a></li>
+                    <li class="nav-item"><a href="form.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
     <header class="page-header">
         <nav class="nav-bar">
             <ul>
-                <li class="top-container active"><a href="index.html">Home</a></li>
+                <li class="top-container"><a href="index.html">Home</a></li>
                 <li class="top-container"><a href="#">About Us</a></li>
                 <li class="top-container"><a href="jewelry.html">Jewellery</a></li>
                 <li class="top-container"><a href="form.html">Contact</a></li>
+                <li class="top-container" id="bar">
+                    <form id="search">
+                        <input type="text" class="text" />
+                        <input type="submit" class="submit" value="Search" />
+                    </form>
+                </li>
             </ul>
         </nav>
+
         <div id="bar">
             <form id="search" method="get" action="">
                 <input type="text" class="text" value="" />
@@ -37,10 +66,12 @@
     </div>
     <div class="box-container box-flex center-wrap">
         <div class="picure-container">
-            <img src="https://i.picsum.photos/id/758/300/300.jpg" alt="" class="item">
+            <img src="https://i.picsum.photos/id/423/200/300.jpg?hmac=Yb4FKqDYd2C1Lvx5F0BDwATeS4vxsllU9vPl228-BXQ"
+                alt="" class="item">
         </div>
         <div class="picure-container">
-            <img src="https://i.picsum.photos/id/758/300/300.jpg" alt="" class="item">
+            <img src="https://i.picsum.photos/id/418/200/200.jpg?hmac=FPLIYEnmfmXtqHPsuZvUzJeXJJbbxMWNq6Evh7mMSN4"
+                alt="" class="item">
         </div>
         <div class="picure-container">
 
@@ -146,6 +177,7 @@
             </table>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

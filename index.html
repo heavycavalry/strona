@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
@@ -10,28 +9,50 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="media.css" media="screen" />
 
     <title>Alamakota</title>
 </head>
 
 <body>
+    <div class="mobilenav-background">
+        <div class="mobile-icon-container">
+            <i class="fa fa-search mobile-icon" aria-hidden="true"></i>
+        </div>
+        <div class="mobilenav-container">
+            <nav class="mobilenav">
+                <div class="hamburger-menu">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="jewelry.html" class="nav-link">Jewellery</a></li>
+                    <li class="nav-item"><a href="form.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 
     <header class="page-header">
+
         <nav class="nav-bar">
             <ul>
                 <li class="top-container"><a href="index.html">Home</a></li>
                 <li class="top-container"><a href="#">About Us</a></li>
                 <li class="top-container"><a href="jewelry.html">Jewellery</a></li>
                 <li class="top-container"><a href="form.html">Contact</a></li>
+                <li class="top-container" id="bar">
+                    <form id="search">
+                        <input type="text" class="text" />
+                        <input type="submit" class="submit" value="Search" />
+                    </form>
+                </li>
             </ul>
         </nav>
-
-        <div id="bar">
-            <form id="search">
-                <input type="text" class="text" />
-                <input type="submit" class="submit" value="Search" />
-            </form>
-        </div>
 
         <h1 class="company-name">Alamakota</h1>
         <img src="https://cdn.pixabay.com/photo/2016/08/15/10/14/wedding-1594957_960_720.jpg" class="main-picture">
@@ -41,19 +62,21 @@
     <section class="box-container box-flex center-wrap">
         <div class="box-1 box-33">
 
-            <p class="company-name white"><b>Alamakota</b></p>
+            <p class="company-name white"><strong>Alamakota</strong></p>
             <p class="in-box">from 1999</p>
             <p class="in-box">Our newest designs<br /> build on a legacy of over 180 years of craftsmanship with
                 beautifully modern necklaces<br /> and pendants, bracelets, rings and more</p>
 
         </div>
-        <img class="box-33 box-photo"
+
+        <img class="box-33 box-photo p1"
             src="https://images.unsplash.com/photo-1566658103120-9e29c6188ab7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80">
-        <img class="box-33 box-photo"
+        <img class="box-33 box-photo p2"
             src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
     </section>
-
-    <h2 class="slogan-main-text">For Women all over the world.</h2>
+    <div class="text-container">
+        <h2 class="slogan-main-text">For Women all over the world.</h2>
+    </div>
 
     <section class="box-container box-flex center-wrap">
         <article class="slogan-text">

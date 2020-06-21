@@ -2,6 +2,7 @@
 *:before,
 *:after {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -14,12 +15,18 @@ body {
 .nav-bar {
     position: fixed;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.692);
+    background-color: white;
+    z-index: 100;
+    display: flex;
 }
 
 
 .nav-bar ul {
     padding: 20px;
+    flex-basis: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .nav-bar ul li {
@@ -41,7 +48,7 @@ body {
 
 
 .company-name {
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 20px;
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -78,34 +85,6 @@ body {
 }
 
 
-@media only screen and (max-width: 1260px) {
-    .box-1 {
-        width: 100%;
-    }
-
-    .box-photo {
-        margin: 80px 80px 0;
-        width: 35%;
-    }
-}
-
-@media only screen and (max-width: 1134px) {
-    .box-photo {
-        margin: 40px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .box-1 {
-        width: 100%;
-    }
-
-    .box-photo {
-        width: 50%;
-    }
-
-}
-
 .white {
     color: white;
 }
@@ -123,9 +102,6 @@ body {
 
 .slogan-main-text {
     text-align: center;
-    margin: 120px;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.678);
-    padding-bottom: 10px;
 }
 
 .nicer-text {
@@ -175,8 +151,8 @@ body {
 .icons i {
     font-size: 60px;
     color: grey;
-    margin: 0 20px;
     padding: 10px 15px;
+    border: 2px solid transparent;
 }
 
 .icons i:hover {
@@ -207,10 +183,12 @@ td {
 }
 
 .item {
-    height: 350px;
-    width: 350px;
-    margin: 35px;
-    transition: transform 0.3s;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px;
+    transition: transform 0.2s;
+    flex: 0 0 50%;
+    padding: 20px;
 }
 
 .item:hover {
@@ -257,7 +235,7 @@ label {
 .form input {
     height: 40px;
     border: 5px solid rgba(49, 47, 47, 0.24);
-    width: 250px;
+    width: 350px;
 }
 
 textarea {
@@ -305,18 +283,22 @@ textarea {
     color: rgb(143, 125, 21);
 }
 
-#bar {
-    float: right;
-    padding: 20px;
-    position: relative;
+#search {
+    display: flex;
 }
 
-
-@media only screen and (max-width: 920px) {
-    #bar {
-        display: none;
-    }
+.text {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
+
+.submit {
+    border: 1px solid #ccc;
+    padding: 2px 20px;
+    border-radius: 10px;
+}
+
 
 .modal-background {
     position: fixed;
@@ -330,6 +312,7 @@ textarea {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s;
+    z-index: 100;
 }
 
 .background-active {
@@ -339,43 +322,34 @@ textarea {
 
 .modal {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.89);
-    border: 10px solid rgba(207, 156, 14, 0.397);
+    background-color: rgb(255, 255, 255);
+    border: 10px solid rgba(207, 14, 191, 0.397);
+    padding: 20px;
     width: 50vw;
-    height: 60vh;
+    min-height: 60vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .modal-main-text {
     text-transform: capitalize;
-    color: rgb(46, 107, 46);
+    color: rgb(75, 26, 72);
     font-size: 50px;
     font-family: 'Dancing Script', cursive;
 }
 
-@media only screen and (max-width: 995px) {
-    .modal-main-text {
-        font-size: 40px;
-    }
-}
-
-@media only screen and (max-width: 813px) {
-    .modal-main-text {
-        font-size: 35px;
-    }
-}
 
 .modal button {
     width: 130px;
     height: 50px;
     font-size: 25px;
     margin-top: 50px;
-    background-color: rgb(231, 218, 101);
+    background-color: rgb(153, 0, 115);
     border-radius: 10px;
     border: none;
-    color: rgb(26, 46, 26);
+    color: rgb(255, 255, 255);
 }
 
 .modal-close {
@@ -387,11 +361,12 @@ textarea {
 .subscribeBtn {
     background-color: rgb(255, 212, 251);
     width: 50vw;
-    height: 15vh;
+    min-width: 300px;
     font-size: 30px;
     border: 15px solid rgba(238, 187, 238, 0.589);
     transition: 1s all;
     border-radius: 1ex;
+    border: 20px solid transparent;
 }
 
 .modal,
@@ -401,11 +376,114 @@ button {
 
 .subscribeBtn:hover {
     background-color: rgb(253, 255, 164);
-    border: 20px solid rgb(255, 239, 91);
     transition: 1s all;
 }
 
 input:required,
 textarea:required {
     border: 1px solid rgba(255, 0, 0, 0.445);
+}
+
+.mobilenav-container {
+    display: none;
+}
+
+.mobilenav {
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+.change {
+    right: 0;
+}
+
+.hamburger-menu {
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(71, 71, 71);
+    transition: all 0.8s;
+}
+
+.change .line-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-2 {
+    opacity: 0;
+}
+
+.change .line-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.nav-item {
+    list-style: none;
+    margin: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.nav-link::before,
+.nav-link::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: rgb(64, 112, 52);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.mobile-icon-container {
+    display: none;
+}
+
+.mobile-icon {
+    font-size: 30px;
+    padding: 40px 30px;
+    position: fixed;
+}
+
+.mobilenav-background {
+    width: 100%;
+    background-color: white;
+    height: 100px;
+    position: fixed;
 }
